@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .submenu {
+            display: none;
+            margin-left: 20px;
+        }
+
+        .submenu.open {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu">
+        <li>
+            Уровень 1
+            <ul class="submenu">
+                <li>
+                    Уровень 1.1
+                    <ul class="submenu">
+                        <li>Уровень 1.1.1</li>
+                        <li>Уровень 1.1.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>
